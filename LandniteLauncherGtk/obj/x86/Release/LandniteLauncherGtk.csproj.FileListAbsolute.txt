@@ -1,0 +1,4 @@
+/Volumes/Stuff/AppData/Visual Studio/Projects/LandniteLauncherGtk/LandniteLauncherGtk/bin/Release/LandniteLauncherGtk.exe
+/Volumes/Stuff/AppData/Visual Studio/Projects/LandniteLauncherGtk/LandniteLauncherGtk/obj/x86/Release/LandniteLauncherGtk.csproj.CoreCompileInputs.cache
+/Volumes/Stuff/AppData/Visual Studio/Projects/LandniteLauncherGtk/LandniteLauncherGtk/obj/x86/Release/LandniteLauncherGtk.exe
+/Volumes/Stuff/AppData/Visual Studio/Projects/LandniteLauncherGtk/LandniteLauncherGtk/obj/x86/Release/LandniteLauncherGtk.csprojAssemblyReference.cache

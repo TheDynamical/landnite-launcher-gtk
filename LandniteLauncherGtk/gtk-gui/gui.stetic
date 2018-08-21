@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Release/LandniteLauncherGtk.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="247 152">
+    <property name="MemberName" />
+    <property name="WidthRequest">242</property>
+    <property name="HeightRequest">147</property>
+    <property name="Title" translatable="yes">Landnite</property>
+    <property name="WindowPosition">CenterAlways</property>
+    <property name="Resizable">False</property>
+    <property name="DefaultWidth">237</property>
+    <property name="DefaultHeight">138</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Button" id="playButton">
+            <property name="MemberName" />
+            <property name="WidthRequest">185</property>
+            <property name="HeightRequest">60</property>
+            <property name="Tooltip" translatable="yes">Play Landnite.</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">PLAY</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="playButtonClicked" />
+          </widget>
+          <packing>
+            <property name="X">29</property>
+            <property name="Y">29</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="aboutButton">
+            <property name="MemberName" />
+            <property name="WidthRequest">50</property>
+            <property name="Tooltip" translatable="yes">About Landnite Launcher.</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">About</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="aboutButtonClicked" />
+          </widget>
+          <packing>
+            <property name="X">165</property>
+            <property name="Y">103</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="changeDirectoryButton">
+            <property name="MemberName" />
+            <property name="WidthRequest">120</property>
+            <property name="HeightRequest">0</property>
+            <property name="Tooltip" translatable="yes">Change where the program searches for your game incase you have it installed elsewhere.</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Change Directory</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="changeDirectoryClicked" />
+          </widget>
+          <packing>
+            <property name="X">29</property>
+            <property name="Y">103</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Dialog" id="LandniteLauncherGtk.NoGameInstalledDialog" design-size="400 300">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">dialog1</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <property name="Buttons">2</property>
+    <property name="HelpButton">False</property>
+    <child internal-child="VBox">
+      <widget class="Gtk.VBox" id="dialog1_VBox">
+        <property name="MemberName" />
+        <property name="BorderWidth">2</property>
+        <child>
+          <placeholder />
+        </child>
+      </widget>
+    </child>
+    <child internal-child="ActionArea">
+      <widget class="Gtk.HButtonBox" id="dialog1_ActionArea">
+        <property name="MemberName" />
+        <property name="Spacing">10</property>
+        <property name="BorderWidth">5</property>
+        <property name="Size">2</property>
+        <property name="LayoutStyle">End</property>
+        <child>
+          <widget class="Gtk.Button" id="buttonCancel">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="UseStock">True</property>
+            <property name="Type">StockItem</property>
+            <property name="StockId">gtk-cancel</property>
+            <property name="ResponseId">-6</property>
+            <property name="label">gtk-cancel</property>
+          </widget>
+          <packing>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="buttonOk">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="UseStock">True</property>
+            <property name="Type">StockItem</property>
+            <property name="StockId">gtk-ok</property>
+            <property name="ResponseId">-5</property>
+            <property name="label">gtk-ok</property>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="LandniteLauncherGtk.SplashScreen" design-size="400 300">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">Landnite</property>
+    <property name="TypeHint">Splashscreen</property>
+    <property name="WindowPosition">Center</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Label" id="splashScreenLabel">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Loading Landnite Client...</property>
+            <property name="Justify">Center</property>
+          </widget>
+          <packing>
+            <property name="X">140</property>
+            <property name="Y">140</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
